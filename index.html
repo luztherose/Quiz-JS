@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="headerLabel">
+            <h1>Test Your Knowledge!</h1>
+            <h2>Game Rules:</h2>
+            <p class="rules">This quiz contains 12 general knowledge multiple choice questions.
+                Each question comes with 4 multiple choice answers, and only one of the answers is correct. Each correct answer is rated at 1 point.  Mathematical calculators are not allowed!
+            </p>
+            <p id="questionCounter">Questions: <span id="currentQuestionCount" >1</span> out of 12</p>
+        </div>
+        <div id="Q1" >
+            <p class="questions"> Which of the following presidents made the statement below?</p>
+            <blockquote>“Education is the most powerful weapon which you use to change the world”</blockquote> 
+            <input type="radio" name="QN1" value="Barack Obama">
+            <label for="question1">A.Barack Obama</label><br>
+            <input type="radio" name="QN1" value="George Bush">
+            <label for="question1">B.George Bush</label><br>
+            <input type="radio" class="rightAnswer" name="QN1" value="Nelson Mandela">
+            <label for="question1" class="labelRightAns">C.Nelson Mandela</label> <br>
+            <input type="radio" name="QN1"  value="Bill Clinton">
+            <label for="question1">D.Bill Clinton</label>
+        </div>
+        <div id="Q2" class="hide">
+            <p class="questions"> What does DOM stand for?</p>
+            <input type="radio"  name="QN2" value="male">
+            <label for="question2">A) Document Oriented Machine</label><br>
+            <input type="radio" class="rightAnswer" name="QN2">
+            <label for="question2" class="labelRightAns">B) Document Object Model</label><br>
+            <input type="radio" name="QN2" value="other"> 
+            <label for="question2">C) Destination Object Model</label><br>
+            <input type="radio" name="QN2" value="other">
+            <label for="question2">D) Destination Object Machine</label>
+        </div>
+        <div id="Q3" class="hide">
+            <p class="questions">Show your math skills: 144 + 44 – 198 = ?</p>
+            <input type="radio" name="gender" value="male">
+            <label for="question3"> A. 188</label><br>
+            <input type="radio"  name="gender" value="female">
+            <label for="question3"> B.	198 </label><br>
+            <input type="radio" name="gender" value="other">
+            <label for="question3">C. -198</label> <br>
+            <input type="radio" class="rightAnswer" name="gender" value="other">
+            <label for="question3" class="labelRightAns"> D.	-10</label>
+        </div>
+        <div id="Q4" class="hide">
+            <p class="questions"> Which is the most popular pet?</p>
+            <input type="radio"  name="QN4" value="">
+            <label for="question4">A. Cat</label><br>
+            <input type="radio"  class="rightAnswer" name="QN4" value="">
+            <label for="question4" class="labelRightAns">B. Dog</label><br>
+            <input type="radio" name="QN4" value="">
+            <label for="question4">C. Fish</label> <br>
+            <input type="radio" name="QN4" value="">
+            <label for="question4">D. Birds</label>
+        </div>
+        <div id="Q5" class="hide">
+            <p class="questions"> What HTML stands for?</p>
+            <input type="radio"  name="QN5" value="">
+            <label for="question5">A. Hyper Text Mark up Language</label><br>
+            <input type="radio" class="rightAnswer" name="QN5" value="">
+            <label for="question5" class="labelRightAns">B. Hyper Text Markup Language</label><br>
+            <input type="radio" name="QN5" value="">
+            <label for="question5">C. Hyper Type Mark up Language</label> <br>
+            <input type="radio" name="QN5" value="">
+            <label for="question5">D. Hyper Text Model Label</label>
+        </div>
+        <div id="Q6"class="hide">
+            <p class="questions"> Which is the smallest province by area in Canada?</p>
+            <input type="radio"  name="QN6" value="">
+            <label for="question6">A. Nova Scotia</label><br>
+            <input type="radio"  name="QN6" value="">
+            <label for="question6">B. New Brunswick</label><br>
+            <input type="radio"  class="rightAnswer" name="QN6" value="">
+            <label for="question6" class="labelRightAns">C. Prince Edward Island</label> <br>
+            <input type="radio" id="other" name="QN6" value="">
+            <label for="question6">D. Manitoba </label>
+        </div>
+        <div id="Q7"class="hide">
+            <p class="questions"> What does HTTP stand for? </p>
+            <input type="radio" name="QN7" value="">
+            <label for="question7">A. Hyper Text Transfer Plan </label><br>
+            <input type="radio"  name="QN7" value="">
+            <label for="question7">B. 	Hyper Text Test Plan </label><br>
+            <input type="radio"  name="QN7" value="">
+            <label for="question7">C. Hyper Test Transfer Plan </label> <br>
+            <input type="radio"  class="rightAnswer" name="QN7" value="">
+            <label for="question7" class="labelRightAns">D. Hyper Text Transfer Protocol </label>
+        </div>
+        <div id="Q8"class="hide">
+            <p class="questions"> What CSS stands for? ?</p>
+            <input type="radio"  name="QN8" value="male">
+            <label for="question8">A. Color Super Style</label><br>
+            <input type="radio" name="QN8" value="female">
+            <label for="question8">B. Cascade Sheet Style</label><br>
+            <input type="radio" class="rightAnswer" name="QN8" value="">
+            <label for="question8" class="labelRightAns">C. Cascade Style Sheet </label> <br>
+            <input type="radio"  name="QN8" value="">
+            <label for="question8">D. Color Style Scale </label>
+        </div>
+        <div id="Q9" class="hide">
+            <p><img src="images/Picture1.png"></p>
+            <input type="radio" id="male" name="QN9" value="">
+            <label for="question9">A. 7</label><br>
+            <input type="radio" id="female" name="QN9" value="">
+            <label for="question9">B. 4</label><br>
+            <input type="radio" id="other" name="QN9" value="">
+            <label for="question9">C. 1 </label> <br>
+            <input type="radio" id="other" class="rightAnswer" name="QN9" value="">
+            <label for="question9" class="labelRightAns">D. 0 </label>
+        </div>
+        <div id="Q10"class="hide">
+            <p>Which United States president made the following speech:</p>
+            <blockquote>“Ask not what your country can do for you, ask what you can do for your country”</blockquote>
+            <input type="radio"  name="QN10" value="">
+            <label for="question10">A. Barack Obama</label><br>
+            <input type="radio"  class="rightAnswer" name="QN10" value="">
+            <label for="question10" class="labelRightAns">B. John F Kennedy</label><br>
+            <input type="radio"  name="QN10" value="">
+            <label for="question10">C. Bill Clinton </label> <br>
+            <input type="radio"  name="QN10" value="">
+            <label for="question10">D. George Bush</label>
+        </div>
+        <div id="Q11"class="hide">
+            <p class="questions"> What is the capital city of Ecuador? </p>
+            <input type="radio"  name="QN11" value="">
+            <label for="question11">A. Lima<br>
+            <input type="radio"  name="QN11" value="">
+            <label for="question11"> B.	Santiago</label><br>
+            <input type="radio"  name="QN11" value="">
+            <label for="question11">C. Georgetown</label> <br>
+            <input type="radio" class="rightAnswer" name="QN11" value="">
+            <label for="question11" class="labelRightAns">D. Quito </label>
+        </div>
+        <div id="Q12" class="hide">
+            <p class="questions"> How does a FOR loop start? </p>
+            <input type="radio" name="QN12" value="">
+            <label for="question12">A. for i = 1 to 5 <br>
+            <input type="radio"  class="rightAnswer" name="QN12" value="">
+            <label for="question12" class="labelRightAns"> B.	for (i = 0; i <= 5; i++) </label><br>
+            <input type="radio" name="QN12" value="">
+            <label for="question12">C. for (i = 0; i <= 5)</label> <br>
+            <input type="radio" name="QN12" value="">
+            <label for="question12">D. for (i <= 5; i++) </label>
+        </div>
+        <div id="score" class="hide">
+            Score
+        </div>
+        <button id="previousButton" class="hide" onclick="previousQuestion()"> ❮ Previous </button>
+        <button id="next" onclick="nextQuestion()">Next ❯ </button> <br>
+        <input type="text" readonly="" id="timeSpent" value="0:00">
+        <div class="hide" id="img-winner">
+            <p> You're a <span class="blueColor">KING</span> / <span class="fucsiaColor">QUEEN </span> !!!</p>  
+            <img src="images/winner1.jpg">
+            <img src="images/firstPlace.gif">
+        </div>
+        <div class="hide" id="secondWinner">
+            <p> You're a <span class="blueColor">KING</span> /<span class="fucsiaColor"> QUEEN </span> !!!</p>  
+            <img src="images/secongImg.jpg">
+        </div>
+        <div class="hide" id="thirdWinner">
+            <p> GOOD JOB!!!</p>  
+            <img src="images/thirdPlace.gif">
+        </div>
+        <div id="noPlace" class="hide">
+            <p>BETTER LUCK NEXT TIME!!</p>
+            <img src="images/fourthPlace.gif">
+        </div>
+        <button id="tryAgainButton" class="hide" onclick="tryAgainButton()">Try Again</button>
+        <button id="seeAnswersButton" class="hide" onclick="allQuestionsAnswers()">Check Answers</button>
+        
+        <script src="JS/script.js"></script>
+        
+</div>
+<footer>
+    <p class="slidein">Copyright © 2020 Luz De La Rosa. All Rights Reserved.</p> 
+</footer>
+</body>
+</html>
