@@ -2,10 +2,9 @@
     display:none;
 }
 #wrapper {
-    width: 90vh;
+    width: 60%;
     margin: 30px auto 0 auto;
     padding: 50px;
-    height: 100%;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +21,7 @@ img {
 body {
     background-color: rgb(255, 222, 219);
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 1.3rem;
 }
 h1 {
     font-family: 'Cormorant Garamond';
@@ -43,7 +42,7 @@ h2, #questionCounter {
     line-height: 1.4;
 }
 .questions {
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 blockquote {
     font-weight: bold;
@@ -98,12 +97,9 @@ button:hover {
     text-align: center;
 }
 #img-winner img, #noPlace img, #thirdWinner img, #secondWinner img {
-    width: 500px;
-    height: 500px;
-    margin-left: 70px;
-}
-#img-winner img {
-    margin-left: 90px;
+    width: 60%;
+    height: 40%;
+    margin-left: 20%;
 }
 #noPlace img {
     padding-bottom: 30px;
@@ -113,7 +109,7 @@ button:hover {
     padding-bottom: 20px;
 }
 #noPlace p, #thirdWinner p, #secondWinner p, #img-winner p {
-    font-size: 30px;
+    font-size: 2em;
     color: orangered;
     margin: 0;
     text-align: center;
@@ -142,6 +138,7 @@ button:hover {
 #Q1 p {
     margin-left: 0;
 }
+
 footer {
     font-family: cursive;
     font-weight: bold;
