@@ -1,3 +1,31 @@
+.customize {
+    width: 40%;
+    margin: auto;
+    font-family: cursive;
+    border: 4px dotted silver;
+    text-align: center;
+    box-shadow: 20px 10px 15px lightpink;
+}
+.customize input {
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 0.8px;
+    
+}
+#changeGroundColor,#cleanField {
+    width: 45%;
+    background-color: rgb(235, 230, 230);
+    font-size: 1rem;
+}
+#changeGroundColor {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#displayCustomizeForm {
+    font-size: 1rem;
+    width: 15%;
+}
 .hide {
     display:none;
 }

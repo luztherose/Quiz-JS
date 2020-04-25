@@ -149,8 +149,41 @@ function allQuestionsAnswers() {
     correctAnswers[10].style.background="lightgreen";
     correctAnswers[11].style.background="lightgreen";
 }
-    // Set a timer
-function countDown() {
- 
+    
+let bodyBackground = document.querySelector("body");
+let toggleButton = document.querySelector("#changeGroundColor");
+let inputText = document.querySelector("input").value;
+let h2Customize = document.querySelector("#customizeHeading");
+let cleanFieldButton = document.querySelector("#cleanField");
+let customizeDiv = document.getElementsByClassName("customize")[0];
+let displayCustomizeButton = document.getElementById("displayCustomizeForm");
 
+function changeBackgroundColor() {
+    h2Customize.style.color ="navy";
+    toggleButton.innerText = "Change Background Color";
+    bodyBackground.style.backgroundColor = inputText;
+    //
 }
+function changeBackgroundToDefault() {
+    toggleButton.innerText = "Change to default";
+    bodyBackground.style.backgroundColor = "rgb(255, 222, 219) ";
+    location.reload();
+}
+toggleButton.addEventListener("click", () => {
+    if (h2Customize.style.color != "navy"){
+        changeBackgroundColor();
+    } else {
+        changeBackgroundToDefault();
+    }
+});
+cleanFieldButton.addEventListener("click", () => {
+    document.getElementById("textField").value = " ";
+})
+
+// displayCustomizeButton.addEventListener("click", () => {
+//         customizeDiv.classList.remove("hide"); 
+//         displayCustomizeButton.innerHTML = "Hide Form";
+//         if (customizeDiv == ) {
+
+//         }
+// });
