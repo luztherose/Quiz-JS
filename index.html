@@ -8,15 +8,6 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <!-- <button id="displayCustomizeForm">Click here to customize your page</button> -->
-    <div class="customize">
-        <h2 id="customizeHeading">Customize your Web Page!</h2>
-        <input type="text" placeholder="pink" id="textField"/>
-        <button id="changeGroundColor">Change Background Color</button>
-        <p>
-            <button id="cleanField">Clean Field </button>
-        </p>
-    </div>
     <div id="wrapper">
         <div id="headerLabel">
             <h1>Test Your Knowledge!</h1>
@@ -185,12 +176,20 @@
         </div>
         <button id="tryAgainButton" class="hide" onclick="tryAgainButton()">Try Again</button>
         <button id="seeAnswersButton" class="hide" onclick="allQuestionsAnswers()">Check Answers</button>
-        
-        <script src="JS/script.js"></script>
-        
+</div>
+<button id="displayCustomizeForm">Click here to customize your page</button>  
+
+<div class="customize hide">
+    <h2 id="customizeHeading">Customize your Web Page!</h2>
+    <input type="text" placeholder="pink" id="textField"/>
+    <button id="changeGroundColor">Change Background Color</button>
+    <p>
+        <button id="cleanField">Clean Field </button>
+    </p>
 </div>
 <footer>
     <p class="slidein">Copyright © 2020 Luz De La Rosa. All Rights Reserved.</p> 
 </footer>
+<script src="JS/script.js"></script>
 </body>
 </html>

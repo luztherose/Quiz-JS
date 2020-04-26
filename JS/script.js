@@ -150,27 +150,26 @@ function allQuestionsAnswers() {
     correctAnswers[11].style.background="lightgreen";
 }
     
-let bodyBackground = document.querySelector("body");
-let toggleButton = document.querySelector("#changeGroundColor");
-let inputText = document.querySelector("input").value;
-let h2Customize = document.querySelector("#customizeHeading");
-let cleanFieldButton = document.querySelector("#cleanField");
+let bodyBackground = document.getElementsByTagName("body")[0];
+let toggleButton = document.getElementById("changeGroundColor");
+let inputText = document.getElementById("textField");
+let h2Customize = document.getElementById("customizeHeading");
+let cleanFieldButton = document.getElementById("cleanField");
 let customizeDiv = document.getElementsByClassName("customize")[0];
 let displayCustomizeButton = document.getElementById("displayCustomizeForm");
 
 function changeBackgroundColor() {
     h2Customize.style.color ="navy";
-    toggleButton.innerText = "Change Background Color";
-    bodyBackground.style.backgroundColor = inputText;
-    //
+    toggleButton.innerHTML = "Change to default";
+    bodyBackground.style.backgroundColor = inputText.value;
 }
 function changeBackgroundToDefault() {
-    toggleButton.innerText = "Change to default";
+    toggleButton.innerHTML = "Change Background Color";
     bodyBackground.style.backgroundColor = "rgb(255, 222, 219) ";
-    location.reload();
+    //location.reload();
 }
 toggleButton.addEventListener("click", () => {
-    if (h2Customize.style.color != "navy"){
+    if (h2Customize.style.color != "navy") {
         changeBackgroundColor();
     } else {
         changeBackgroundToDefault();
@@ -179,11 +178,13 @@ toggleButton.addEventListener("click", () => {
 cleanFieldButton.addEventListener("click", () => {
     document.getElementById("textField").value = " ";
 })
-
-// displayCustomizeButton.addEventListener("click", () => {
-//         customizeDiv.classList.remove("hide"); 
-//         displayCustomizeButton.innerHTML = "Hide Form";
-//         if (customizeDiv == ) {
-
-//         }
-// });
+displayCustomizeButton.addEventListener("click", () => {
+        if (h2Customize.style.color != "navy") {
+            customizeDiv.classList.remove("hide"); 
+            displayCustomizeButton.innerHTML = "Hide Form";
+        }else {
+            customizeDiv.classList.add("hide"); 
+            displayCustomizeButton.innerHTML = "Change Color";
+            location.reload();
+        }
+});
