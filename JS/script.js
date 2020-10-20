@@ -135,19 +135,13 @@ function allQuestionsAnswers() {
     document.getElementById("Q11").style.display="block";
     document.getElementById("Q12").style.display="block";
     // Show the correct answer with a green background
-    var correctAnswers = document.getElementsByClassName("labelRightAns");
-    correctAnswers[0].style.background="lightgreen";
-    correctAnswers[1].style.background="lightgreen";
-    correctAnswers[2].style.background="lightgreen";
-    correctAnswers[3].style.background="lightgreen";
-    correctAnswers[4].style.background="lightgreen";
-    correctAnswers[5].style.background="lightgreen";
-    correctAnswers[6].style.background="lightgreen";
-    correctAnswers[7].style.background="lightgreen";
-    correctAnswers[8].style.background="lightgreen";
-    correctAnswers[9].style.background="lightgreen";
-    correctAnswers[10].style.background="lightgreen";
-    correctAnswers[11].style.background="lightgreen";
+
+    const correctAnswers = document.getElementsByClassName("labelRightAns");
+
+    for(let i = 0; i < correctAnswers.length; i++) {
+        correctAnswers[i].classList.add("lightgreenColor");
+    }
+    
 }
     
 let bodyBackground = document.getElementsByTagName("body")[0];

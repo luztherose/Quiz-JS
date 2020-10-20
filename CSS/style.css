@@ -150,6 +150,9 @@ button:hover {
 .blueColor {
     color: blue;
 }
+.lightgreenColor {
+    background: rgb(78, 209, 78);
+}
 #score {
     font-family: 'Cormorant Garamond';
     font-size: 40px;
