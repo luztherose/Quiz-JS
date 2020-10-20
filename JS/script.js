@@ -1,7 +1,7 @@
 
 
-var currentPosition = 1;
-var score = 0;
+let currentPosition = 1;
+let score = 0;
 
 function nextQuestion() {
     // Are we on the last question?
