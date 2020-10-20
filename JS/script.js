@@ -133,7 +133,23 @@ function allQuestionsAnswers() {
         correctAnswers[i].classList.add("lightgreenColor");
     }
 }
-    
+// Set timer
+
+function countDown() {
+        let inputTimer = document.getElementById("timeSpent");
+        let second = 11
+        let id = setInterval(function() {
+            second -= 1
+            if(second === -1){
+                clearInterval(id)
+                return
+            }
+            inputTimer.value = second +"s";
+        }, 1000);
+}
+countDown();
+
+    // Customize Page's Background color
 let bodyBackground = document.getElementsByTagName("body")[0];
 let toggleButton = document.getElementById("changeGroundColor");
 let inputText = document.getElementById("textField");
