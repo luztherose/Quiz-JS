@@ -77,7 +77,7 @@ function tryAgainButton(){
     // Score
 function calculateScore() {
     // Calculating the score for each question
-    for(var i = 1; i <= 12; i = i + 1) {
+    for(let i = 1; i <= 12; i = i + 1) {
         const currentQuestion = document.getElementById("Q" + i);
         // User answer #Q1 :checked
         let userSelection = currentQuestion.querySelector(":checked"); 
@@ -149,7 +149,7 @@ function countDown() {
 }
 countDown();
 
-    // Customize Page's Background color
+// Customize Page's Background color
 let bodyBackground = document.getElementsByTagName("body")[0];
 let toggleButton = document.getElementById("changeGroundColor");
 let inputText = document.getElementById("textField");
